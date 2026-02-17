@@ -2,52 +2,76 @@
 
 Compreender a estrutura de arquivos do AdminKit é essencial para personalizar e manter seu projeto. Este guia detalha a organização completa do template.
 
-## Estrutura Principal
+## Estrutura Principal (Reorganizada - v2.0)
 
 ```
 AdminKitPro/
-├── css/                     # Estilos CSS
-│   ├── light.css           # Tema claro (principal)
-│   └── dark.css            # Tema escuro
-├── js/                      # Scripts JavaScript
-│   ├── app.js              # Aplicação principal
-│   ├── app.js.map          # Source map para debug
-│   ├── app.js.LICENSE.txt  # Licenças de bibliotecas
-│   ├── settings.js         # Configurações e personalizações
-│   ├── datatables.js       # Plugin DataTables
-│   └── fullcalendar.js     # Plugin FullCalendar
-├── img/                     # Imagens e ícones
-│   ├── icons/              # Ícones SVG
-│   ├── avatars/            # Avatares de exemplo
-│   ├── photos/             # Fotos de exemplo
-│   └── flags/              # Bandeiras para seleção de idioma
-├── fonts/                   # Fontes do sistema
-│   ├── fa-regular-400.woff2
-│   ├── fa-solid-900.woff2
-│   └── [outras fontes]
-├── docs/                    # Documentação
-│   ├── guia-de-inicio/     # Guias de início
-│   ├── componentes/        # Documentação de componentes
-│   ├── exemplos/           # Exemplos de uso
-│   └── personalizacao/     # Guias de personalização
-└── [páginas HTML]          # Todas as páginas do template
+├── index.html              # Página inicial (redirect para dashboard)
+├── src/                    # Código fonte das páginas
+│   ├── pages/             # Páginas do aplicativo
+│   │   ├── dashboards/    # Dashboards (analytics, ecommerce, crypto)
+│   │   ├── auth/          # Autenticação (sign-in, sign-up, reset-password)
+│   │   ├── app/           # Páginas do app (settings, profile, projects, etc.)
+│   │   ├── errors/        # Páginas de erro (404, 500)
+│   │   └── misc/          # Páginas diversas (blank)
+│   └── ui/                # Componentes e exemplos UI
+│       ├── components/    # Componentes UI (cards, buttons, modals, etc.)
+│       ├── forms/         # Formulários (inputs, validação, editores)
+│       ├── tables/        # Tabelas (bootstrap, datatables)
+│       ├── charts/        # Gráficos (apexcharts, chartjs)
+│       ├── icons/         # Ícones (feather, font-awesome)
+│       ├── maps/          # Mapas (google, vector)
+│       ├── notifications/ # Notificações
+│       └── app/           # Aplicações (calendar)
+├── public/                # Assets públicos
+│   ├── css/              # Estilos CSS
+│   │   ├── light.css     # Tema claro (principal)
+│   │   └── dark.css      # Tema escuro
+│   ├── js/               # Scripts JavaScript
+│   │   ├── app.js        # Aplicação principal
+│   │   ├── settings.js   # Configurações
+│   │   ├── datatables.js # DataTables
+│   │   └── fullcalendar.js # FullCalendar
+│   ├── fonts/            # Fontes Font Awesome
+│   └── img/              # Imagens e ícones
+│       ├── icons/        # Ícones SVG
+│       ├── avatars/      # Avatares de exemplo
+│       ├── photos/       # Fotos de exemplo
+│       └── flags/        # Bandeiras
+├── docs/                  # Documentação em pt-br
+│   ├── guia-de-inicio/   # Guias de início
+│   ├── componentes/      # Documentação de componentes
+│   ├── exemplos/         # Exemplos de uso
+│   └── personalizacao/   # Guias de personalização
+├── README.md             # Documentação principal
+├── LICENSE               # Licença MIT
+├── CONTRIBUTING.md       # Guia de contribuição
+└── CODE_OF_CONDUCT.md    # Código de conduta
 ```
 
 ## Arquivos CSS
 
-### `css/light.css`
+### `public/css/light.css`
 Arquivo CSS principal com o tema claro. Contém:
 - Variáveis CSS para cores, fontes e espaçamentos
 - Estilos de componentes Bootstrap customizados
 - Estilos específicos do AdminKit
 - Responsividade para diferentes dispositivos
 
-### `css/dark.css`
+### `public/css/dark.css`
 Arquivo CSS com o tema escuro. Sobrescreve as variáveis de cores do tema claro para criar a aparência dark mode.
+
+## Caminhos Relativos
+
+Com a nova estrutura, os arquivos HTML em `src/` referenciam os assets usando caminhos relativos:
+
+- CSS/JS: `../../public/css/` e `../../public/js/`
+- Imagens: `../../public/img/`
+- Fontes: carregadas automaticamente pelo navegador
 
 ## Arquivos JavaScript
 
-### `js/app.js`
+### `public/js/app.js`
 Script principal da aplicação. Contém:
 - Inicialização de componentes
 - Configuração de gráficos
