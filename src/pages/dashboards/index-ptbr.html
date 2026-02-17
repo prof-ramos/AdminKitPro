@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Template de Admin &amp; Dashboard Responsivo baseado em Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo.adminkit.io/" />
+
+	<title>AdminKit Demo - Template Admin Bootstrap 5</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<!-- BEGIN SETTINGS -->
+	<link class="js-stylesheet" href="../../public/css/light.css" rel="stylesheet">
+	<script src="../../public/js/settings.js"></script>
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<!-- END SETTINGS -->
+</head>
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index-ptbr.html>
+					<span class="sidebar-brand-text align-middle">
+						AdminKit
+						<sup><small class="badge bg-primary text-uppercase">Pro</small></sup>
+					</span>
+					<svg class="sidebar-brand-icon align-middle" width="32px" height="32px" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"
+						stroke-linecap="square" stroke-linejoin="miter" color="#FFFFFF" style="margin-left: -3px">
+						<path d="M12 4L20 8.00004L12 12L4 8.00004L12 4Z"></path>
+						<path d="M20 12L12 16L4 12"></path>
+						<path d="M20 16L12 20L4 16"></path>
+					</svg>
+				</a>
+
+				<div class="sidebar-user">
+					<div class="d-flex justify-content-center">
+						<div class="flex-shrink-0">
+							<img src="../../public/img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" />
+						</div>
+						<div class="flex-grow-1 ps-2">
+							<a class="sidebar-user-title dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								Charles Hall
+							</a>
+							<div class="dropdown-menu dropdown-menu-start">
+								<a class="dropdown-item" href="../app/profile.html"><i class="align-middle me-1" data-feather="user"></i> Perfil</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="../app/settings.html"><i class="align-middle me-1" data-feather="settings"></i> Configurações</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Central de Ajuda</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Sair</a>
+							</div>
+
+							<div class="sidebar-user-subtitle">Designer</div>
+						</div>
+					</div>
+				</div>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Páginas
+					</li>
+					<li class="sidebar-item active">
+						<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link">
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboards</span>
+						</a>
+						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
+							<li class="sidebar-item active"><a class="sidebar-link" href="index-ptbr.html>Analytics</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../dashboards/ecommerce.html">E-Commerce <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../dashboards/crypto.html">Crypto <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Páginas</span>
+						</a>
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/settings.html">Configurações</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/projects.html">Projetos <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/clients.html">Clientes <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/orders.html">Pedidos <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/pricing.html">Preços <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/chat.html">Chat <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/blank.html">Página em Branco</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../app/profile.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Perfil</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../app/invoice.html">
+							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Fatura</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../app/tasks.html">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Tarefas</span>
+							<span class="sidebar-badge badge bg-primary">Pro</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../../ui/app/calendar.html">
+							<i class="align-middle" data-feather="calendar"></i> <span class="align-middle">Calendário</span>
+							<span class="sidebar-badge badge bg-primary">Pro</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a href="#auth" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Autenticação</span>
+						</a>
+						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/sign-in.html">Entrar</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/sign-up.html">Cadastrar</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/reset-password.html">Redefinir Senha <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/404.html">Página 404 <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../app/500.html">Página 500 <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-header">
+						Componentes
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#ui" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">Elementos UI</span>
+						</a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/alerts.html">Alertas <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/buttons.html">Botões</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/cards.html">Cards</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/general.html">Geral</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/grid.html">Grid</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/modals.html">Modais <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/offcanvas.html">Offcanvas <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/placeholders.html">Placeholders <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/tabs.html">Abas <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/components/typography.html">Tipografia</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#icons" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Ícones</span>
+							<span class="sidebar-badge badge bg-light">1.500+</span>
+						</a>
+						<ul id="icons" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../icons/feather.html">Feather</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/icons/font-awesome.html">Font Awesome <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#forms" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Formulários</span>
+						</a>
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../forms/basic-inputs.html">Inputs Básicos</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/forms/layouts.html">Layouts de Formulário <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/forms/input-groups.html">Grupos de Input <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../tables/bootstrap.html">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Tabelas</span>
+						</a>
+					</li>
+
+					<li class="sidebar-header">
+						Plugins & Extras
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#form-plugins" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Plugins de Formulário</span>
+						</a>
+						<ul id="form-plugins" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/forms/advanced-inputs.html">Inputs Avançados <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/forms/editors.html">Editores <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/forms/validation.html">Validação <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">DataTables</span>
+						</a>
+						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/tables/datatables-responsive.html">Tabela Responsiva <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/tables/datatables-buttons.html">Tabela com Botões <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/tables/datatables-column-search.html">Busca por Coluna <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/tables/datatables-fixed-header.html">Cabeçalho Fixo <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/tables/datatables-multi.html">Seleção Múltipla <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/tables/datatables-ajax.html">Dados via Ajax <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#charts" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Gráficos</span>
+						</a>
+						<ul id="charts" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/charts/chartjs.html">Chart.js</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../charts/apexcharts.html">ApexCharts <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="../../ui/notifications/index.html">
+							<i class="align-middle" data-feather="bell"></i> <span class="align-middle">Notificações</span>
+							<span class="sidebar-badge badge bg-primary">Pro</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#maps" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="map"></i> <span class="align-middle">Mapas</span>
+						</a>
+						<ul id="maps" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/maps/google.html">Google Maps</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../ui/maps/vector.html">Mapas Vetoriais <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a data-bs-target="#multi" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="corner-right-down"></i> <span class="align-middle">Multi Nível</span>
+						</a>
+						<ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+							<li class="sidebar-item">
+								<a data-bs-target="#multi-2" data-bs-toggle="collapse" class="sidebar-link collapsed">Dois Níveis</a>
+								<ul id="multi-2" class="sidebar-dropdown list-unstyled collapse">
+									<li class="sidebar-item">
+										<a class="sidebar-link" href="#">Item 1</a>
+									</li>
+									<li class="sidebar-item">
+										<a class="sidebar-link" href="#">Item 2</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-item">
+								<a data-bs-target="#multi-3" data-bs-toggle="collapse" class="sidebar-link collapsed">Três Níveis</a>
+								<ul id="multi-3" class="sidebar-dropdown list-unstyled collapse">
+									<li class="sidebar-item">
+										<a data-bs-target="#multi-3-1" data-bs-toggle="collapse" class="sidebar-link collapsed">Item 1</a>
+										<ul id="multi-3-1" class="sidebar-dropdown list-unstyled collapse">
+											<li class="sidebar-item">
+												<a class="sidebar-link" href="#">Item 1</a>
+											</li>
+											<li class="sidebar-item">
+												<a class="sidebar-link" href="#">Item 2</a>
+											</li>
+										</ul>
+									</li>
+									<li class="sidebar-item">
+										<a class="sidebar-link" href="#">Item 2</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Relatório Semanal de Vendas</strong>
+						<div class="mb-3 text-sm">
+							Seu relatório semanal de vendas está pronto para download!
+						</div>
+
+						<div class="d-grid">
+							<a href="https://adminkit.io/" class="btn btn-outline-primary" target="_blank">Download</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<form class="d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Buscar…" aria-label="Buscar">
+						<button class="btn" type="button">
+							<i class="align-middle" data-feather="search"></i>
+						</button>
+					</div>
+				</form>
+
+				<ul class="navbar-nav d-none d-lg-flex">
+					<li class="nav-item px-2 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="megaDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							Mega Menu
+						</a>
+						<div class="dropdown-menu dropdown-menu-start dropdown-mega" aria-labelledby="megaDropdown">
+							<div class="d-md-flex align-items-start justify-content-start">
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Elementos UI</div>
+									<a class="dropdown-item" href="#">Alertas</a>
+									<a class="dropdown-item" href="#">Botões</a>
+									<a class="dropdown-item" href="#">Cards</a>
+									<a class="dropdown-item" href="#">Carousel</a>
+									<a class="dropdown-item" href="#">Geral</a>
+									<a class="dropdown-item" href="#">Grid</a>
+									<a class="dropdown-item" href="#">Modais</a>
+									<a class="dropdown-item" href="#">Abas</a>
+									<a class="dropdown-item" href="#">Tipografia</a>
+								</div>
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Formulários</div>
+									<a class="dropdown-item" href="#">Layouts</a>
+									<a class="dropdown-item" href="#">Inputs Básicos</a>
+									<a class="dropdown-item" href="#">Grupos de Input</a>
+									<a class="dropdown-item" href="#">Inputs Avançados</a>
+									<a class="dropdown-item" href="#">Editores</a>
+									<a class="dropdown-item" href="#">Validação</a>
+									<a class="dropdown-item" href="#">Assistente</a>
+								</div>
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Tabelas</div>
+									<a class="dropdown-item" href="#">Tabelas Básicas</a>
+									<a class="dropdown-item" href="#">Tabela Responsiva</a>
+									<a class="dropdown-item" href="#">Tabela com Botões</a>
+									<a class="dropdown-item" href="#">Busca por Coluna</a>
+									<a class="dropdown-item" href="#">Seleção Múltipla</a>
+									<a class="dropdown-item" href="#">Dados via Ajax</a>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							Recursos
+						</a>
+						<div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+							<a class="dropdown-item" href="https://adminkit.io/" target="_blank"><i class="align-middle me-1" data-feather="home"></i>
+								Página Inicial</a>
+							<a class="dropdown-item" href="https://adminkit.io/docs/" target="_blank"><i class="align-middle me-1" data-feather="book-open"></i>
+								Documentação</a>
+							<a class="dropdown-item" href="https://adminkit.io/docs/getting-started/changelog/" target="_blank"><i class="align-middle me-1"
+								data-feather="edit"></i> Changelog</a>
+						</div>
+					</li>
+				</ul>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 Novas Notificações
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Atualização concluída</div>
+												<div class="text-muted small mt-1">Reinicie o servidor 12 para completar a atualização.</div>
+												<div class="text-muted small mt-1">30m atrás</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h atrás</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login de 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h atrás</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Nova conexão</div>
+												<div class="text-muted small mt-1">Christina aceitou sua solicitação.</div>
+												<div class="text-muted small mt-1">14h atrás</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Ver todas as notificações</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 Novas Mensagens
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="../../public/img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m atrás</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="../../public/img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h atrás</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="../../public/img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h atrás</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="../../public/img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h atrás</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Ver todas as mensagens</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+								<img src="../../public/img/flags/br.png" alt="Português" />
+							</a>
+							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+								<a class="dropdown-item" href="index-ptbr.html>
+									<img src="../../public/img/flags/br.png" alt="Português" width="20" class="align-middle me-1" />
+									<span class="align-middle">Português</span>
+								</a>
+								<a class="dropdown-item" href="analytics.html">
+									<img src="../../public/img/flags/us.png" alt="English" width="20" class="align-middle me-1" />
+									<span class="align-middle">English</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="../../public/img/flags/es.png" alt="Spanish" width="20" class="align-middle me-1" />
+									<span class="align-middle">Espanhol</span>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="maximize"></i>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								<img src="../../public/img/avatars/avatar.jpg" class="avatar img-fluid rounded" alt="Charles Hall" />
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="../app/profile.html"><i class="align-middle me-1" data-feather="user"></i> Perfil</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="../app/settings.html"><i class="align-middle me-1" data-feather="settings"></i> Configurações</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Central de Ajuda</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Sair</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class="row mb-2 mb-xl-3">
+						<div class="col-auto d-none d-sm-block">
+							<h3><strong>Analytics</strong> Dashboard</h3>
+						</div>
+
+						<div class="col-auto ms-auto text-end mt-n1">
+							<a href="#" class="btn btn-light bg-white me-2">Convidar Amigo</a>
+							<a href="#" class="btn btn-primary">Novo Projeto</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-6 col-xxl-5 d-flex">
+							<div class="w-100">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Vendas</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="truck"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3">2.382</h1>
+												<div class="mb-0">
+													<span class="badge badge-primary-light"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+													<span class="text-muted">Desde a semana passada</span>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Visitantes</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="users"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3">14.212</h1>
+												<div class="mb-0">
+													<span class="badge badge-success-light"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
+													<span class="text-muted">Desde a semana passada</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Ganhos</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="dollar-sign"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3">$21.300</h1>
+												<div class="mb-0">
+													<span class="badge badge-success-light"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
+													<span class="text-muted">Desde a semana passada</span>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Pedidos</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="shopping-cart"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3">64</h1>
+												<div class="mb-0">
+													<span class="badge badge-danger-light"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
+													<span class="text-muted">Desde a semana passada</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-xxl-7">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="float-end">
+										<form class="row g-2">
+											<div class="col-auto">
+												<select class="form-select form-select-sm bg-light border-0">
+													<option>Jan</option>
+													<option value="1">Fev</option>
+													<option value="2">Mar</option>
+													<option value="3">Abr</option>
+												</select>
+											</div>
+											<div class="col-auto">
+												<input type="text" class="form-control form-control-sm bg-light rounded-2 border-0" style="width: 100px;"
+													placeholder="Buscar..">
+											</div>
+										</form>
+									</div>
+									<h5 class="card-title mb-0">Movimento Recente</h5>
+								</div>
+								<div class="card-body pt-2 pb-3">
+									<div class="chart chart-sm">
+										<canvas id="chartjs-dashboard-line"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-3">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Ação</a>
+												<a class="dropdown-item" href="#">Outra ação</a>
+												<a class="dropdown-item" href="#">Algo mais aqui</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Uso de Navegadores</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="py-3">
+											<div class="chart chart-xs">
+												<canvas id="chartjs-dashboard-pie"></canvas>
+											</div>
+										</div>
+
+										<table class="table mb-0">
+											<tbody>
+												<tr>
+													<td><i class="fas fa-circle text-primary fa-fw"></i> Chrome <span
+															class="badge badge-success-light">+12%</span></td>
+													<td class="text-end">4306</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-warning fa-fw"></i> Firefox <span
+															class="badge badge-danger-light">-3%</span></td>
+													<td class="text-end">3801</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-danger fa-fw"></i> Edge</td>
+													<td class="text-end">1689</td>
+												</tr>
+												<tr>
+													<td><i class="fas fa-circle text-dark fa-fw"></i> Outros</td>
+													<td class="text-end">3251</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Ação</a>
+												<a class="dropdown-item" href="#">Outra ação</a>
+												<a class="dropdown-item" href="#">Algo mais aqui</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Tempo Real</h5>
+								</div>
+								<div class="card-body px-4">
+									<div id="world_map" style="height:350px;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-1">
+							<div class="card flex-fill">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Ação</a>
+												<a class="dropdown-item" href="#">Outra ação</a>
+												<a class="dropdown-item" href="#">Algo mais aqui</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Calendário</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="chart">
+											<div id="datetimepicker-dashboard"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
+							<div class="card flex-fill">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Ação</a>
+												<a class="dropdown-item" href="#">Outra ação</a>
+												<a class="dropdown-item" href="#">Algo mais aqui</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Últimos Projetos</h5>
+								</div>
+								<table class="table table-borderless my-0">
+									<thead>
+										<tr>
+											<th>Nome</th>
+											<th class="d-none d-xxl-table-cell">Empresa</th>
+											<th class="d-none d-xl-table-cell">Autor</th>
+											<th>Status</th>
+											<th class="d-none d-xl-table-cell">Ação</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="d-flex">
+													<div class="flex-shrink-0">
+														<div class="bg-light rounded-2">
+															<img class="p-2" src="../../public/img/icons/brand-1.svg">
+														</div>
+													</div>
+													<div class="flex-grow-1 ms-3">
+														<strong>Projeto Apollo</strong>
+														<div class="text-muted">
+															Web, Design UI/UX
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xxl-table-cell">
+												<strong>Lechters</strong>
+												<div class="text-muted">
+													Imobiliária
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<strong>Vanessa Tucker</strong>
+												<div class="text-muted">
+													HTML, JS, React
+												</div>
+											</td>
+											<td>
+												<div class="d-flex flex-column w-100">
+													<span class="me-2 mb-1 text-muted">65%</span>
+													<div class="progress progress-sm bg-success-light w-100">
+														<div class="progress-bar bg-success" role="progressbar" style="width: 65%;"></div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<a href="#" class="btn btn-light">Ver</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex">
+													<div class="flex-shrink-0">
+														<div class="bg-light rounded-2">
+															<img class="p-2" src="../../public/img/icons/brand-2.svg">
+														</div>
+													</div>
+													<div class="flex-grow-1 ms-3">
+														<strong>Projeto Bongo</strong>
+														<div class="text-muted">
+															Web
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xxl-table-cell">
+												<strong>Cellophane Transportation</strong>
+												<div class="text-muted">
+													Transporte
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<strong>William Harris</strong>
+												<div class="text-muted">
+													HTML, JS, Vue
+												</div>
+											</td>
+											<td>
+												<div class="d-flex flex-column w-100">
+													<span class="me-2 mb-1 text-muted">33%</span>
+													<div class="progress progress-sm bg-danger-light w-100">
+														<div class="progress-bar bg-danger" role="progressbar" style="width: 33%;"></div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<a href="#" class="btn btn-light">Ver</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex">
+													<div class="flex-shrink-0">
+														<div class="bg-light rounded-2">
+															<img class="p-2" src="../../public/img/icons/brand-3.svg">
+														</div>
+													</div>
+													<div class="flex-grow-1 ms-3">
+														<strong>Projeto Canary</strong>
+														<div class="text-muted">
+															Web, Design UI/UX
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xxl-table-cell">
+												<strong>Clemens</strong>
+												<div class="text-muted">
+													Seguros
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<strong>Sharon Lessman</strong>
+												<div class="text-muted">
+													HTML, JS, Laravel
+												</div>
+											</td>
+											<td>
+												<div class="d-flex flex-column w-100">
+													<span class="me-2 mb-1 text-muted">50%</span>
+													<div class="progress progress-sm bg-warning-light w-100">
+														<div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<a href="#" class="btn btn-light">Ver</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex">
+													<div class="flex-shrink-0">
+														<div class="bg-light rounded-2">
+															<img class="p-2" src="../../public/img/icons/brand-4.svg">
+														</div>
+													</div>
+													<div class="flex-grow-1 ms-3">
+														<strong>Projeto Edison</strong>
+														<div class="text-muted">
+															Design UI/UX
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xxl-table-cell">
+												<strong>Affinity Investment Group</strong>
+												<div class="text-muted">
+													Finanças
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<strong>Vanessa Tucker</strong>
+												<div class="text-muted">
+													HTML, JS, React
+												</div>
+											</td>
+											<td>
+												<div class="d-flex flex-column w-100">
+													<span class="me-2 mb-1 text-muted">80%</span>
+													<div class="progress progress-sm bg-success-light w-100">
+														<div class="progress-bar bg-success" role="progressbar" style="width: 80%;"></div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<a href="#" class="btn btn-light">Ver</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex">
+													<div class="flex-shrink-0">
+														<div class="bg-light rounded-2">
+															<img class="p-2" src="../../public/img/icons/brand-5.svg">
+														</div>
+													</div>
+													<div class="flex-grow-1 ms-3">
+														<strong>Projeto Indigo</strong>
+														<div class="text-muted">
+															Web, Design UI/UX
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xxl-table-cell">
+												<strong>Konsili</strong>
+												<div class="text-muted">
+													Varejo
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<strong>Christina Mason</strong>
+												<div class="text-muted">
+													HTML, JS, Vue
+												</div>
+											</td>
+											<td>
+												<div class="d-flex flex-column w-100">
+													<span class="me-2 mb-1 text-muted">78%</span>
+													<div class="progress progress-sm bg-primary-light w-100">
+														<div class="progress-bar bg-primary" role="progressbar" style="width: 78%;"></div>
+													</div>
+												</div>
+											</td>
+											<td class="d-none d-xl-table-cell">
+												<a href="#" class="btn btn-light">Ver</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<div class="dropdown position-relative">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-horizontal"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Ação</a>
+												<a class="dropdown-item" href="#">Outra ação</a>
+												<a class="dropdown-item" href="#">Algo mais aqui</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Vendas Mensais</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+									<div class="align-self-center chart chart-lg">
+										<canvas id="chartjs-dashboard-bar"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a href="https://adminkit.io/" target="_blank" class="text-muted"><strong>AdminKit</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Suporte</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Central de Ajuda</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacidade</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Termos</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradientLight = ctx.createLinearGradient(0, 0, 0, 225);
+			gradientLight.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradientLight.addColorStop(1, "rgba(215, 227, 244, 0)");
+			var gradientDark = ctx.createLinearGradient(0, 0, 0, 225);
+			gradientDark.addColorStop(0, "rgba(51, 66, 84, 1)");
+			gradientDark.addColorStop(1, "rgba(51, 66, 84, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+					datasets: [{
+						label: "Vendas ($)",
+						fill: true,
+						backgroundColor: window.theme.id === "light" ? gradientLight : gradientDark,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)",
+								fontColor: "#fff"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE", "Outros"],
+					datasets: [{
+						data: [4306, 3801, 1689, 3251],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger,
+							"#E8EAED"
+						],
+						borderWidth: 5,
+						borderColor: window.theme.white
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 70
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+					datasets: [{
+						label: "Este ano",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Xangai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Deli"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tóquio"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "Nova York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "Londres"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madri"
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						stroke: window.theme.white,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				regionStyle: {
+					initial: {
+						fill: window.theme["gray-200"]
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+			setTimeout(function() {
+				map.updateSize();
+			}, 250);
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span class=\"fas fa-chevron-left\" title=\"Mês anterior\"></span>",
+				nextArrow: "<span class=\"fas fa-chevron-right\" title=\"Próximo mês\"></span>",
+				defaultDate: defaultDate,
+				locale: {
+					firstDayOfWeek: 0,
+					weekdays: {
+						shorthand: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+						longhand: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+					},
+					months: {
+						shorthand: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+						longhand: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+					},
+				}
+			});
+		});
+	</script>
+
+</body>
+
+</html>
